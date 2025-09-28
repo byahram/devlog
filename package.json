@@ -2,17 +2,21 @@
   "name": "devlog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://byahram.github.io/devlog/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "echo > out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@mdx-js/react": "^3.1.0",
     "@radix-ui/react-slot": "^1.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.485.0",
     "next": "15.5.4",
