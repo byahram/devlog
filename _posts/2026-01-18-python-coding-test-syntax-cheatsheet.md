@@ -4,6 +4,9 @@ date: 2026-01-18
 categories: [코딩테스트]
 tags: [python, 코딩테스트, 문법, 자료구조, 표준라이브러리]
 toc: true
+image:
+  path: /assets/img/thumbnails/coding-test-syntax-cheatsheet.png
+  alt: 파이썬 코딩테스트 필수 문법 치트시트
 ---
 
 # 코딩테스트 필수 문법 치트시트

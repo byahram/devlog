@@ -4,6 +4,9 @@ date: 2026-01-20
 categories: [코딩테스트]
 tags: [python, 코딩테스트, 그래프, 최단거리, Union-Find, 위상정렬, MST, 누적합]
 toc: true
+image:
+  path: /assets/img/thumbnails/coding-test-advanced-template.png
+  alt: 파이썬 코딩테스트 알고리즘 심화 템플릿
 ---
 
 # 코딩테스트 알고리즘 템플릿 - 심화편
