@@ -1,6 +1,6 @@
 ---
 title: "[Python] 코딩테스트 알고리즘 템플릿 - 심화편"
-date: 2026-09-06
+date: 2026-01-20
 categories: [코딩테스트]
 tags: [python, 코딩테스트, 그래프, 최단거리, Union-Find, 위상정렬, MST, 누적합]
 toc: true
@@ -19,7 +19,7 @@ toc: true
 | ★★★ | 작업 순서 / 선행 조건 / 선수 과목 | [**위상 정렬**](#22-위상-정렬) |
 | ★★ | 모든 노드 → 모든 노드 최단거리 | [**플로이드 워셜**](#20-플로이드-워셜) |
 | ★★ | 직사각형 영역의 합을 여러 번 | [**2차원 누적합**](#25-2차원-누적합) |
-| ★★ | 오큰수 / 오른쪽에서 가장 가까운 큰 값 | [**단조 스택**](#26-단조-스택) |
+| ★★ | 오큰수 / 오른쪽에서 처음 만나는 더 큰 값 | [**단조 스택**](#26-단조-스택) |
 | ★★ | 모든 노드를 최소 비용으로 연결 | [**Kruskal**](#23-크루스칼) |
 | ★ | 트리 / 가장 가까운 공통 조상 | [**LCA**](#24-lca) |
 
@@ -46,6 +46,41 @@ toc: true
 - 노드 수가 비교적 작을 때 사용
 - 시간복잡도: `O(N³)`
 
+### 그래프 초기화
+
+```python
+INF = int(1e9)
+
+graph = [[INF] * (n + 1) for _ in range(n + 1)]
+
+for i in range(1, n + 1):
+    graph[i][i] = 0
+
+for _ in range(m):
+    a, b, cost = map(int, input().split())
+
+    graph[a][b] = min(graph[a][b], cost)
+```
+
+무방향 그래프라면:
+
+```python
+graph[a][b] = min(graph[a][b], cost)
+graph[b][a] = min(graph[b][a], cost)
+```
+
+### 기본코드
+
+```python
+for k in range(1, n + 1):
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            graph[i][j] = min(
+                graph[i][j],
+                graph[i][k] + graph[k][j]
+            )
+```
+
 ### 핵심
 
 ```text
@@ -56,23 +91,6 @@ vs
 i → k → j로 가는 거리
 
 → 더 작은 값으로 갱신
-```
-
-### 기본코드
-
-```python
-INF = int(1e9)
-
-for i in range(1, n + 1):
-    graph[i][i] = 0
-
-for k in range(1, n + 1):
-    for i in range(1, n + 1):
-        for j in range(1, n + 1):
-            graph[i][j] = min(
-                graph[i][j],
-                graph[i][k] + graph[k][j]
-            )
 ```
 
 ### 최단거리 구분
@@ -143,6 +161,7 @@ Union
 같은 집합?
 연결되어 있는가?
 사이클?
+
 → Union-Find
 ```
 
@@ -180,6 +199,13 @@ while q:
             q.append(nxt)
 ```
 
+### 사이클 확인
+
+```python
+if len(result) != n:
+    print("사이클 존재")
+```
+
 ### 핵심
 
 ```text
@@ -191,6 +217,9 @@ while q:
 
 새롭게 0이 되면
 → Queue에 넣기
+
+결과 노드 수 < n
+→ 사이클 존재
 ```
 
 ### 바로 떠올리기
@@ -212,6 +241,17 @@ while q:
 
 - 간선을 비용이 작은 순서대로 선택
 - 사이클 방지를 위해 Union-Find 사용
+- `edges`는 `(비용, 노드1, 노드2)` 형태로 저장
+
+### 간선 입력
+
+```python
+edges = []
+
+for _ in range(m):
+    a, b, cost = map(int, input().split())
+    edges.append((cost, a, b))
+```
 
 ### 기본코드
 
@@ -324,6 +364,14 @@ for i in range(1, N + 1):
 
 ### 직사각형 합
 
+아래 함수는:
+
+```text
+(r1, c1) ~ (r2, c2)
+→ 0-based
+→ 양 끝 포함
+```
+
 ```python
 def rect_sum(r1, c1, r2, c2):
     return (
@@ -355,7 +403,7 @@ def rect_sum(r1, c1, r2, c2):
 
 ## 26. 단조 스택
 
-→ 오큰수 / 오른쪽에서 조건을 만족하는 가장 가까운 값
+→ 오큰수 / 오른쪽에서 처음 만나는 더 큰 값
 
 ### 오큰수
 
@@ -388,7 +436,7 @@ stack top의 값보다 크면
 ```text
 오큰수
 오른쪽에서 처음 만나는 큰 수
-가장 가까운 큰 값
+가장 가까운 더 큰 값
 
 → 단조 스택
 ```
@@ -399,7 +447,21 @@ stack top의 값보다 크면
 
 → N 이하의 모든 소수 구하기
 
-### 기본코드
+### 소수 하나 판별
+
+```python
+def is_prime(x):
+    if x < 2:
+        return False
+
+    for i in range(2, int(x ** 0.5) + 1):
+        if x % i == 0:
+            return False
+
+    return True
+```
+
+### N 이하의 모든 소수
 
 ```python
 n = 1000
