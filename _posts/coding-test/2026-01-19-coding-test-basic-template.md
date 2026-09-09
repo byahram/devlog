@@ -1,7 +1,7 @@
 ---
 title: "[Python] 코딩테스트 알고리즘 템플릿 - 기본편"
 date: 2026-01-19
-categories: [코딩테스트]
+categories: [Coding Test]
 tags: [python, 코딩테스트, 자료구조, 알고리즘, BFS, DFS, 이진탐색, 힙]
 toc: true
 image:

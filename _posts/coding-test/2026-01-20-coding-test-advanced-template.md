@@ -1,7 +1,7 @@
 ---
 title: "[Python] 코딩테스트 알고리즘 템플릿 - 심화편"
 date: 2026-01-20
-categories: [코딩테스트]
+categories: [Coding Test]
 tags: [python, 코딩테스트, 그래프, 최단거리, Union-Find, 위상정렬, MST, 누적합]
 toc: true
 image:

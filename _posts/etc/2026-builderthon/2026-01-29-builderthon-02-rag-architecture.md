@@ -1,7 +1,7 @@
 ---
 title: "[예선] 02. RAG 기반 AI 플랫폼 'Rewatch': 기술 스택과 아키텍처"
 date: 2026-01-29 00:00:00 +0900
-categories: [기타, 2026 Builderthon]
+categories: [ETC, 2026 Builderthon]
 tags: [Fastcampus, Builderthon, Rewatch, AI, RAG, Next.js, Node.js, Supabase, OpenAI, 회고]
 toc: true
 mermaid: true

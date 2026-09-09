@@ -1,7 +1,7 @@
 ---
 title: "[본선] 03. 예선 통과! 그리고 본선 18시간 생존을 위한 기술 전략"
 date: 2026-02-03 00:00:00 +0900
-categories: [기타, 2026 Builderthon]
+categories: [ETC, 2026 Builderthon]
 tags: [Fastcampus, Builderthon, 해커톤, AI, RAG, NVIDIA, Anthropic, Replit, ElevenLabs, 개발전략]
 toc: true
 image:

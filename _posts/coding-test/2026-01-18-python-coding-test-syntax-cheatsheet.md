@@ -1,7 +1,7 @@
 ---
 title: "[Python] 코딩테스트 필수 문법 치트시트"
 date: 2026-01-18
-categories: [코딩테스트]
+categories: [Coding Test]
 tags: [python, 코딩테스트, 문법, 자료구조, 표준라이브러리]
 toc: true
 image:

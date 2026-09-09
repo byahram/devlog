@@ -1,7 +1,7 @@
 ---
 title: "[예선] 01. D-5, 팀 결성부터 기획까지: AI 학습 플랫폼 'Rewatch'"
 date: 2026-01-25 00:00:00 +0900
-categories: [기타, 2026 Builderthon]
+categories: [ETC, 2026 Builderthon]
 tags: [Fastcampus, Builderthon, Rewatch, AI, RAG, 사이드프로젝트, 기획, 회고]
 toc: true
 image:

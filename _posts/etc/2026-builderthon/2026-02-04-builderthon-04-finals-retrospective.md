@@ -1,7 +1,7 @@
 ---
 title: '[본선] 04. 본선 후기: 18시간의 사투, 그리고 "AI는 왜 썼나요?"'
 date: 2026-02-04 00:00:00 +0900
-categories: [기타, 2026 Builderthon]
+categories: [ETC, 2026 Builderthon]
 tags: [Fastcampus, Builderthon, 해커톤, AI, 협업, 커뮤니케이션, 회고, KPT]
 toc: true
 image:
