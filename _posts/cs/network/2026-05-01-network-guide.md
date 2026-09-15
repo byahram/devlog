@@ -1,8 +1,8 @@
 ---
 title: "네트워크 학습 지도"
 date: 2026-05-01
-categories: [CS, 네트워킹]
-tags: [네트워킹]
+categories: [CS, 네트워크]
+tags: [네트워크]
 toc: true
 mermaid: true
 comments: false
