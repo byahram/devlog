@@ -1,5 +1,5 @@
 ---
-title: "운영체제 학습 지도"
+title: "[OS] 0. 운영체제 학습 지도"
 date: 2026-05-01
 categories: [CS, 운영체제]
 tags: [운영체제]
@@ -17,13 +17,27 @@ flowchart LR
     os["운영체제"] --- overview["운영체제의 큰 그림"]
     overview --- kernel["커널"]
     overview --- syscall["시스템 콜"]
+
     os --- execution["프로세스 및 스레드 관리"]
     execution --- process["프로세스와 스레드"]
     execution --- sync["동기화와 교착 상태"]
+
     os --- resources["자원 할당 및 관리"]
     resources --- cpu["CPU 관리: CPU 스케줄링"]
+    cpu --- cpu_concept["기본 개념<br/>(우선순위, 스케줄링 큐, 선점/비선점)"]
+    cpu --- cpu_algo["CPU 스케줄링 알고리즘"]
+    cpu --- cpu_linux["리눅스 CPU 스케줄링"]
+
     resources --- memory["메모리 관리: 가상 메모리"]
-    resources --- files["파일·디렉터리 관리: 파일 시스템"]
+    memory --- mem_addr["물리 주소와 논리 주소"]
+    memory --- mem_alloc["메모리 할당"]
+    memory --- mem_paging["페이징과 페이지 교체 알고리즘"]
+
+    resources --- files["파일/디렉터리 관리: 파일 시스템"]
+    files --- file_dir["파일과 디렉터리"]
+    files --- file_sys["파일 시스템"]
+
+    sync ~~~ cpu
 ```
 
 

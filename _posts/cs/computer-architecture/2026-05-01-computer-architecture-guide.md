@@ -1,5 +1,5 @@
 ---
-title: "컴퓨터 구조 학습 지도"
+title: "[CA] 0. 컴퓨터 구조 학습 지도"
 date: 2026-05-01
 categories: [CS, 컴퓨터 구조]
 tags: [컴퓨터 구조]
@@ -15,27 +15,31 @@ comments: false
 ```mermaid
 flowchart LR
     architecture["컴퓨터 구조"] --- overview["컴퓨터 구조의 큰 그림"]
+    overview --- why["컴퓨터 구조를 알아야 하는 이유"]
+
     architecture --- information["컴퓨터가 이해하는 정보"]
     information --- data["데이터"]
-    data --- numbers["0과 1로 숫자 표현하기"]
-    numbers --- integers["정수"]
-    numbers --- realNumbers["실수"]
+    data --- numbers["0과 1로 숫자 표현하기 (정수·실수)"]
     data --- characters["0과 1로 문자 표현하기"]
     information --- instruction["명령어"]
     instruction --- instructionTypes["명령어의 종류"]
     instruction --- instructionCycle["명령어 사이클"]
+
     architecture --- components["컴퓨터의 핵심 부품"]
     components --- cpu["CPU"]
     cpu --- cpuParts["주요 구성 요소"]
     cpu --- cpuTechniques["빠른 명령어 처리를 위한 기술"]
     components --- memory["메모리와 캐시 메모리"]
     memory --- ram["RAM"]
-    memory --- endianness["엔디언<br/>여러 바이트로 된 데이터를 메모리에 저장하는 순서"]
+    memory --- endianness["엔디언<br/>(바이트 저장 순서)"]
     memory --- cache["캐시 메모리"]
     components --- storage["보조기억장치"]
-    storage --- raid["RAID<br/>여러 저장장치를 묶어 구성하는 기술"]
+    storage --- raid["RAID<br/>(디스크 구성 기술)"]
     components --- io["입출력장치"]
     io --- ioTechniques["입출력 기법"]
+
+    why ~~~ data
+    instructionCycle ~~~ cpu
 ```
 
 <br>
