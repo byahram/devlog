@@ -81,7 +81,8 @@ flowchart LR
 ```
 
 
-<!-- ## 공부 순서
+{% comment %}
+## 공부 순서
 
 1. [네트워크 계층과 이더넷]({% post_url cs/network/2026-08-17-network-layers-ethernet %})
 1. [IP 주소와 패킷 전달]({% post_url cs/network/2026-08-18-ip-addressing-routing %})
@@ -90,6 +91,7 @@ flowchart LR
 1. [HTTP 요청과 상태 관리]({% post_url cs/network/2026-08-21-http-messages %})
 1. [HTTP 캐시와 조건부 요청]({% post_url cs/network/2026-08-22-http-cache-validation %})
 1. [HTTPS와 TLS]({% post_url cs/network/2026-08-23-https-tls %})
-1. [프록시와 부하 분산]({% post_url cs/network/2026-08-24-proxies-load-balancing %}) -->
+1. [프록시와 부하 분산]({% post_url cs/network/2026-08-24-proxies-load-balancing %})
+{% endcomment %}
 
 [전체 CS 학습 지도로 돌아가기]({% post_url cs/2026-05-01-cs %})

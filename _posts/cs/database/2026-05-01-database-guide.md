@@ -75,13 +75,15 @@ flowchart LR
 ```
 
 
-<!-- ## 공부 순서
+{% comment %}
+## 공부 순서
 
 1. [관계형 데이터 모델과 키]({% post_url cs/database/2026-08-25-relational-model-keys %})
 1. [트랜잭션과 ACID]({% post_url cs/database/2026-08-26-transactions-acid %})
 1. [SQL: 테이블·데이터 조작부터 JOIN·서브쿼리·뷰까지]({% post_url cs/database/2026-08-27-sql-basics %})
 1. [B+ 트리와 데이터베이스 인덱스]({% post_url cs/database/2026-08-28-bplus-tree-indexes %})
 1. [정규화와 역정규화]({% post_url cs/database/2026-08-29-normalization %})
-1. [NoSQL과 MongoDB·Redis]({% post_url cs/database/2026-08-30-nosql-mongodb-redis %}) -->
+1. [NoSQL과 MongoDB·Redis]({% post_url cs/database/2026-08-30-nosql-mongodb-redis %})
+{% endcomment %}
 
 [전체 CS 학습 지도로 돌아가기]({% post_url cs/2026-05-01-cs %})

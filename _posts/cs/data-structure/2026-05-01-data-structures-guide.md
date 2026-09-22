@@ -64,13 +64,15 @@ flowchart LR
 
 
 
-<!-- ## 공부 순서
+{% comment %}
+## 공부 순서
 
 1. [시간 복잡도와 공간 복잡도]({% post_url cs/data-structure/2026-06-28-coding-test-example %}) — 기존 코드 분석과 점근 표기
 1. [배열과 연결 리스트]({% post_url cs/data-structure/2026-08-13-arrays-linked-lists %})
 1. [스택과 큐]({% post_url cs/data-structure/2026-08-14-stacks-queues %})
 1. [해시 테이블과 충돌]({% post_url cs/data-structure/2026-08-15-hash-tables-collisions %})
 1. [트리와 탐색]({% post_url cs/data-structure/2026-08-16-trees-search %})
-1. [그래프 구현 예시: 코딩테스트 심화 템플릿]({% post_url coding-test/2026-01-20-coding-test-advanced-template %}) -->
+1. [그래프 구현 예시: 코딩테스트 심화 템플릿]({% post_url coding-test/2026-01-20-coding-test-advanced-template %})
+{% endcomment %}
 
 [전체 CS 학습 지도로 돌아가기]({% post_url cs/2026-05-01-cs %})

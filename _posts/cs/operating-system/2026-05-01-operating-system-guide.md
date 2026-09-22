@@ -41,13 +41,15 @@ flowchart LR
 ```
 
 
-<!-- ## 공부 순서
+{% comment %}
+## 공부 순서
 
 1. [커널과 시스템 콜]({% post_url cs/operating-system/2026-08-07-kernel-system-calls %})
 1. [프로세스와 스레드]({% post_url cs/operating-system/2026-08-08-processes-threads %})
 1. [동기화와 교착 상태]({% post_url cs/operating-system/2026-08-09-synchronization-deadlock %})
 1. [CPU 스케줄링]({% post_url cs/operating-system/2026-08-10-cpu-scheduling %})
 1. [가상 메모리와 페이징]({% post_url cs/operating-system/2026-08-11-virtual-memory-paging %})
-1. [파일 시스템과 링크]({% post_url cs/operating-system/2026-08-12-file-systems-links %}) -->
+1. [파일 시스템과 링크]({% post_url cs/operating-system/2026-08-12-file-systems-links %})
+{% endcomment %}
 
 [전체 CS 학습 지도로 돌아가기]({% post_url cs/2026-05-01-cs %})
